@@ -505,7 +505,7 @@
 
 @media (max-width:600px) {
     .trending .swiper-slide img {
-        width: 100px;
+        width: 120px;
     }
 
     .header .navbar .buttons .btn1 select {
