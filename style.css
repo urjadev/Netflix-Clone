@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.common-container {
+    background: #111;
+    padding: auto 40px;
+}
+
+.wrapper {
+    background: linear-gradient(#111, rgba(175, 83, 98, 0.993), #111);
+}
+
+.header .navbar {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .navbar .logo {
+    position: relative;
+}
+
+.header .navbar .logo .img-1 {
+    width: 150px;
+    cursor: pointer;
+}
+
+/* 
+.header .navbar .logo .img-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    visibility: hidden;
+} */
+
+.header .navbar .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header .navbar .buttons button {
+    padding: 5px 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.header .navbar .buttons .btn1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    border: 1.8px solid white;
+    cursor: pointer;
+}
+
+.header .navbar .buttons .btn1 select {
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.header .navbar .buttons .btn1 option {
+    color: black;
+}
+
+.hero-container {
+    width: 100%;
+}
+
+.hero-container .hero-img {
+    width: 90vw;
+    height: 500px;
+    border: 2px solid white;
+    margin: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-container .hero-img .image-wrapper {
+    display: flex;
+    width: calc(200%);
+    height: 100%;
+    animation: slide 70s linear infinite;
+}
+
+.hero-container .hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.hero-container .hero-img .overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.4) 60%,
+            rgba(0, 0, 0, 0.8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+}
+
+.hero-container .hero-img .text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+}
+
+.hero-container .hero-img .text h2 {
+    font-size: 50px;
+}
+
+.hero-container .hero-img .text p {
+    font-size: 16px;
+}
+
+.hero-container .signup {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.hero-container .signup p {
+    font-size: 16px;
+    color: rgb(134, 134, 134);
+    margin-bottom: 20px;
+}
+
+.hero-container .signup .signup-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-container .signup .signup-field input,
+.hero-container .signup .signup-field button {
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.hero-container .signup .signup-field input {
+    flex-basis: 70%;
+    background: rgba(0, 0, 0, 0.247);
+    border: 1px solid white;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.hero-container .signup .signup-field button {
+    flex-basis: 30%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    background: #e50914;
+    color: white;
+}
+
+.hero-container .signup .signup-field button i {
+    margin-left: 5px;
+}
+
+/* -------------------Trending Section---------------------- */
+.trending {
+    padding: 20px 80px;
+    margin: auto;
+    background: #111;
+    position: relative;
+}
+
+.trending h2 {
+    font-size: 30px;
+    color: white;
+}
+
+
+.trending .swiper {
+    margin: 20px 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.trending .swiper-slide {
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+
+}
+
+.trending .swiper-slide:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.trending .swiper-slide img {
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.swiper-button-prev {
+    width: 20px;
+}
+
+/* --------------------------------grid section=-------- */
+.grid-container {
+    padding: 40px 80px;
+    margin: auto;
+}
+
+.grid-container h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.grid-container .grid {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.grid-container .grid .box {
+    min-height: 150px;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid white;
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: #2d2a2ae7;
+    position: relative;
+
+}
+
+.grid-container .grid .box img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* --------------------------faq--------------------------- */
+.faq {
+    padding: 40px 80px;
+    margin: auto;
+}
+
+.faq h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.faq .accordion-item {
+    background: #2d2d2d;
+    border: none;
+    color: white;
+    transition: 0.4s ease;
+}
+
+.faq .accordion-item:hover {
+    background: #535353;
+}
+
+.faq .accordion-button {
+    background: transparent;
+    font-weight: 500;
+    color: white;
+}
+
+.faq .accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: white;
+}
+
+.faq .accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FFFFFF' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+/* Change arrow color for expanded state */
+.faq .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FFFFFF' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+.faq .getStarted {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.faq .getStarted button {
+    padding: 7px 20px;
+    border: none;
+    outline: none;
+    background: #e50914;
+    color: white;
+    border-radius: 30px;
+}
+
+.faq .getStarted p {
+    margin-top: 10px;
+    color: white;
+}
+
+
+/* -----------------------------footer------------------------- */
+.footer {
+    padding: 40px 80px;
+    margin: auto;
+}
+
+.footer .links {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer .links .col {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer .links .col a {
+    font-size: 15px;
+    color: #ffffffb3;
+}
+
+
+.footer .btn1 {
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.footer .btn1 select {
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer .btn1 option {
+    color: black;
+}
+
+
+.footer p {
+    margin-top: 30px;
+    color: #ffffffb3;
+}
+
+/* ----------------------------Responsive media queries------------------- */
+
+@media (max-width:1200px) {
+    .trending .swiper-slide img {
+        width: 150px;
+    }
+}
+
+
+@media (max-width:950px) {
+    .common-container {
+        padding: auto 20px;
+    }
+
+    .header .navbar .logo .img-1 {
+        width: 100px;
+    }
+
+    .hero-container .hero-img {
+        max-width: 90%;
+    }
+
+    .hero-container .hero-img .text {
+        width: 100%;
+    }
+
+    .trending {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .grid-container {
+        max-width: 90%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .grid-container .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container .grid .box {
+        padding: 20px;
+        min-height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .grid-container .grid .box img {
+        position: static;
+    }
+
+    .faq {
+        max-width: 90%;
+        padding: 20px 0;
+    }
+
+    .footer {
+        max-width: 90%;
+        padding: 20px 0;
+    }
+
+    .footer .links {
+        display: block;
+    }
+
+    .footer .links .col {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width:750px) {
+    .hero-container .hero-img .text h2 {
+        font-size: 40px;
+    }
+
+    .hero-container .signup {
+        max-width: 90%;
+    }
+
+    .trending {
+        max-width: 90%;
+
+    }
+
+    .trending .swiper {
+        width: 100%;
+    }
+
+    .trending .swiper-slide img {
+        width: 120px;
+    }
+
+
+}
+
+@media (max-width:600px) {
+    .trending .swiper-slide img {
+        width: 100px;
+    }
+
+    .header .navbar .buttons .btn1 select {
+        display: none;
+    }
+
+    .hero-container .signup .signup-field {
+        flex-direction: column;
+    }
+
+    .hero-container .signup .signup-field input {
+        width: 100%;
+    }
+}
