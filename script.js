@@ -20,14 +20,18 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 4, // Show 4 images
             spaceBetween: 5, // Adjust spacing for better appearance
         },
+        550: {
+            slidesPerView: 3, // Show 4 images
+            spaceBetween: 5, // Adjust spacing for better appearance
+        },
 
         500: {
-            slidesPerView: 4, // Show 4 images
+            slidesPerView: 3, // Show 4 images
             spaceBetween: 5, // Adjust spacing for better appearance
         },
         400: {
             slidesPerView: 2, // Show 4 images
-            spaceBetween: 5, // Adjust spacing for better appearance
+            spaceBetween: 2, // Adjust spacing for better appearance
         },
         300: {
             slidesPerView: 2, // Show 4 images
